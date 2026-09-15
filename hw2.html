@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW 2 - Books and HTML Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .card {
+            border: 1px solid #999;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        #highlight-card {
+            background: #d4edda;
+        }
+
+        .rainbow {
+            border: 5px solid;
+            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+        }
+
+        .mark {
+            background-color: yellow;
+        }
+
+        .urgent {
+            font-weight: bold;
+        }
+
+        .inline-block-demo {
+            display: inline-block;
+            border: 1px solid #555;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .inline-card {
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Favorite Books</h1>
+
+    <hr>
+
+    <table border="1" width="100%" cellpadding="15">
+        <tr>
+
+            <!-- LEFT COLUMN -->
+            <td width="25%" valign="top">
+
+                <h2>My Favorite Genres</h2>
+
+                <ul>
+                    <li>Romance</li>
+                    <li>Mystery</li>
+                    <li>Fantasy</li>
+                    <li>Thriller</li>
+                </ul>
+
+                <h2>Quick Links</h2>
+
+                <p>
+                    <a href="#favorites">My Favorite Books</a>
+                </p>
+
+                <p>
+                    <a href="#table">Book Table</a>
+                </p>
+
+                <p>
+                    <a href="https://www.goodreads.com/" target="_blank">Goodreads</a>
+                </p>
+
+                <p>
+                    <a href="mailto:helenguardado0@gmail.com">Contact Me</a>
+                </p>
+
+            </td>
+
+            <!-- RIGHT COLUMN -->
+            <td width="75%" valign="top">
+
+                <h2>Welcome to My Favorite Books Page!</h2>
+
+                <div class="card" id="highlight-card">
+                    <p>
+                        Books are one of my favorite ways to relax and escape into
+                        different stories. I enjoy reading books that are
+                        <strong>interesting</strong>, <em>emotional</em>, and
+                        <u>memorable</u>.
+                    </p>
+                </div>
+
+                <div class="card rainbow inline-card">
+                    <h3>Why I Like Reading</h3>
+
+                    <p>
+                        I enjoy reading because I can discover new characters,
+                        stories, and worlds.
+                    </p>
+
+                    <p>
+                        This is <span class="mark urgent">very important</span>
+                        information!
+                    </p>
+                </div>
+
+                <div class="card inline-card">
+                    <h3>Reading Quote</h3>
+
+                    <p>
+                        <q>Books can take you places without leaving home.</q>
+                    </p>
+
+                    <blockquote>
+                        A good book is like a good friend because you can always
+                        return to it and find something new.
+                    </blockquote>
+                </div>
+
+                <br><br>
+
+                <center>
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80"
+                         width="500"
+                         alt="Stack of books on a table">
+                </center>
+
+                <h2 id="favorites">My Favorite Books</h2>
+
+                <p>
+                    <b>The Great Gatsby</b> is one of my favorite books because
+                    of its interesting characters and story. I also enjoy
+                    <i>romance and mystery</i> books because they keep me
+                    interested from beginning to end.
+                </p>
+
+                <h3>Books I Want to Read</h3>
+
+                <ol type="I" start="5">
+                    <li>A mystery novel</li>
+                    <li>A romance novel</li>
+                    <li>A fantasy novel</li>
+                    <li>A thriller novel</li>
+                </ol>
+
+                <h2 id="table">Table of My Favorite Books</h2>
+
+                <table border="1" cellpadding="8">
+                    <tr bgcolor="lightblue">
+                        <th>Book</th>
+                        <th>Genre</th>
+                        <th>Why I Like It</th>
+                    </tr>
+
+                    <tr>
+                        <td>The Great Gatsby</td>
+                        <td>Classic</td>
+                        <td>Interesting characters and story</td>
+                    </tr>
+
+                    <tr>
+                        <td>It Ends With Us</td>
+                        <td>Romance</td>
+                        <td>Emotional and memorable</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Hunger Games</td>
+                        <td>Fantasy</td>
+                        <td>Exciting and suspenseful</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>Exercise 3 Examples</h3>
+
+                <div class="inline-block-demo">Box D</div>
+                <div class="inline-block-demo">Box E</div>
+
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <p>
+        <small>Thanks for visiting my HW 2 page!</small>
+    </p>
+
+</body>
+
+</html>
