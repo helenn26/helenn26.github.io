@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color + Margin + Background – Practice</title>
+
+  <style>
+    body {
+      background: #FFF4F2;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1100px;
+    }
+
+    .card {
+      width: 240px;
+      min-height: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      background-color: #cccccc;
+    }
+
+    .card:nth-child(1) {
+      background: #F4A261;
+    }
+
+    .card:nth-child(2) {
+      background: #6A994E;
+    }
+
+    .card:nth-child(3) {
+      background: #457B9D;
+    }
+
+    .card:nth-child(4) {
+      background: #E76F51;
+    }
+
+    .card-content {
+      padding: 24px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 16px 0;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      transition: transform 0.25s ease;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    }
+
+    /* Part 2 */
+    .card2 {
+      width: 400px;
+      height: 200px;
+      padding: 20px;
+      border: 8px solid darkslategray;
+      margin: 30px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-content">
+        <h2>Summer</h2>
+        <p>Warm days, cold drinks, long evenings</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>Forest</h2>
+        <p>Green, calm, moss and mystery</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>Ocean</h2>
+        <p>Deep blue, waves, freedom</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>Sunset</h2>
+        <p>Orange, pink, magic hour</p>
+      </div>
+    </div>
+
+    <div class="card2">
+      <h2>Part 2</h2>
+      <p>This card demonstrates width, height, padding, border, and margin.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
