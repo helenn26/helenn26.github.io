@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Opacity Practice</title>
+
+    <style>
+
+        body {
+            background-color: #FFF4F2;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #6A4C93;
+        }
+
+        table {
+            margin: 30px auto;
+            border: 3px solid #C06C84;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background-color: white;
+        }
+
+        .image-one {
+            width: 400px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+
+        .image-one:hover {
+            opacity: 1;
+        }
+
+        .image-two {
+            width: 400px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .image-two:hover {
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Opacity Practice</h1>
+
+    <table>
+        <tr>
+            <td>
+                <img class="image-one"
+                     src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600"
+                     alt="Mountain landscape">
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <img class="image-two"
+                     src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+                     alt="Ocean beach">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
