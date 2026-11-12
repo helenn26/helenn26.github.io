@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript If and Else Statements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #333333;
+        }
+
+        pre {
+            background-color: #eeeeee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript If and Else Statements</h1>
+
+    <p>
+        JavaScript uses if and else statements to make decisions in a program.
+        They allow the code to do different things depending on whether a condition
+        is true or false. This is useful when a program needs to check information
+        before deciding what to do next.
+    </p>
+
+    <h2>The if Statement</h2>
+
+    <p>
+        An if statement runs a block of code only when its condition is true.
+        The condition is placed inside parentheses after the word if. The code
+        that should run is placed inside curly braces.
+    </p>
+
+    <pre>
+if (condition) {
+    // code runs if the condition is true
+}
+    </pre>
+
+    <p>For example:</p>
+
+    <pre>
+let temperature = 80;
+
+if (temperature > 70) {
+    console.log("It is warm outside.");
+}
+    </pre>
+
+    <p>
+        In this example, JavaScript checks whether temperature is greater than 70.
+        Since the value is 80, the condition is true and the message is displayed.
+    </p>
+
+    <h2>The else Statement</h2>
+
+    <p>
+        An else statement gives the program another option when the if condition
+        is false. The else statement does not have its own condition. It runs when
+        the condition in the if statement is not true.
+    </p>
+
+    <pre>
+let temperature = 55;
+
+if (temperature > 70) {
+    console.log("It is warm outside.");
+} else {
+    console.log("It is not very warm outside.");
+}
+    </pre>
+
+    <p>
+        Here, the temperature is 55, so the condition is false. The code inside
+        the else section runs and displays the second message.
+    </p>
+
+    <h2>The else if Statement</h2>
+
+    <p>
+        An else if statement is used when there are more than two possible
+        conditions. JavaScript checks each condition in order. When it finds
+        a condition that is true, it runs that block of code and skips the
+        remaining conditions.
+    </p>
+
+    <pre>
+let score = 85;
+
+if (score >= 90) {
+    console.log("You got an A.");
+} else if (score >= 80) {
+    console.log("You got a B.");
+} else if (score >= 70) {
+    console.log("You got a C.");
+} else {
+    console.log("You need to keep studying.");
+}
+    </pre>
+
+    <p>
+        In this example, the score is 85. The first condition is false because
+        85 is not at least 90. The second condition is true because 85 is at
+        least 80, so the program displays "You got a B."
+    </p>
+
+    <h2>Comparison Operators</h2>
+
+    <p>
+        Conditions often use comparison operators to compare two values.
+        The result of a comparison is either true or false.
+    </p>
+
+    <ul>
+        <li><strong>==</strong> checks if two values are equal.</li>
+        <li><strong>===</strong> checks if two values are equal in value and type.</li>
+        <li><strong>!=</strong> checks if two values are not equal.</li>
+        <li><strong>!==</strong> checks if two values are not equal in value or type.</li>
+        <li><strong>&gt;</strong> checks if the left value is greater than the right value.</li>
+        <li><strong>&lt;</strong> checks if the left value is less than the right value.</li>
+        <li><strong>&gt;=</strong> checks if the left value is greater than or equal to the right value.</li>
+        <li><strong>&lt;=</strong> checks if the left value is less than or equal to the right value.</li>
+    </ul>
+
+    <h2>Using More Than One Condition</h2>
+
+    <p>
+        JavaScript also allows conditions to be combined. The && operator means
+        both conditions must be true. The || operator means at least one condition
+        must be true. The ! operator changes a true condition to false or a false
+        condition to true.
+    </p>
+
+    <pre>
+let age = 20;
+let hasLicense = true;
+
+if (age >= 16 && hasLicense) {
+    console.log("You can drive.");
+} else {
+    console.log("You cannot drive.");
+}
+    </pre>
+
+    <p>
+        In this example, both conditions must be true for the first message to
+        display. If either condition is false, the else section runs.
+    </p>
+
+    <h2>Why If and Else Statements Are Useful</h2>
+
+    <p>
+        If and else statements are important because they let a program respond
+        to different situations. They can be used to check a user's age, compare
+        scores, validate information in a form, or decide what message to show.
+        Without conditional statements, a program would not be able to make these
+        kinds of decisions.
+    </p>
+
+</body>
+</html>
